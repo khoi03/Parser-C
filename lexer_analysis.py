@@ -11,7 +11,6 @@ def _read_input(path):
     with open(path,"r") as f:
         data=f.readlines()
     return list(map(lambda x: x.replace("    ","\t",),data))
-
 class DATA:
     def __init__(self,data):
         self.__data=data
